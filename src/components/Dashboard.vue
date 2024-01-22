@@ -4,10 +4,10 @@
         <h2>Visualize suas métricas abaixo!</h2>
 
         <h3>Aqui vai o seu <span class="metric-name">Monthly Recurring Revenue (MRR)</span></h3>
-        <canvas id="myChart"></canvas>
+        <canvas id="mrrChart"></canvas>
 
         <h3>Aqui vai o seu <span class="metric-name">Churn Rate (CR)</span></h3>
-        <canvas id="myChart2"></canvas>
+        <canvas id="crChart"></canvas>
     </div>
 </template>
 
@@ -36,8 +36,8 @@ export default {
             });
         };
 
-        createChart(document.getElementById('myChart'), this.chartDataMRR, 'Monthly Recurring Revenue (MRR)');
-        createChart(document.getElementById('myChart2'), this.chartDataCR, 'Churn Rate (CR)');
+        createChart(document.getElementById('mrrChart'), this.chartDataMRR, 'Monthly Recurring Revenue (MRR)');
+        createChart(document.getElementById('crChart'), this.chartDataCR, 'Churn Rate (CR)');
     }
 };
 </script>

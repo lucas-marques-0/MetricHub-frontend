@@ -28,7 +28,7 @@ const uploadFile = async () => {
     Swal.fire({ icon: 'error', title: 'Erro', text: 'Os dados do seu arquivo não são compatíveis.' });
     console.log(error)
   }
-  
+
   loading.value = false;
   fileInput.value.value = '';
 }
@@ -129,10 +129,11 @@ button:disabled {
     overflow: hidden;
     text-overflow: ellipsis; 
   }
-
+  
   h1 {
     font-size: 1.3em;
   }
+
   p {
     font-size: 0.9em;
   }
