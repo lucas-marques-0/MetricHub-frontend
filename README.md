@@ -1,14 +1,17 @@
-# MetricHub-Copybase
+# MetricHub
 
-This template should help get you started developing with Vue 3 in Vite.
+![#41167F](https://github.com/lucas-marques-0/MetricHub-frontend/assets/111307314/3004a1d5-9f94-448c-b065-415393927079)
 
-## Recommended IDE Setup
+# Faça o upload das suas planilhas!
+![#41167F (1)](https://github.com/lucas-marques-0/MetricHub-frontend/assets/111307314/00443885-79a8-4476-9fe5-6865dbe74c34)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+# Analise métricas importantes!
+![#41167F (2)](https://github.com/lucas-marques-0/MetricHub-frontend/assets/111307314/0899f30c-31b2-4570-995e-4ac3c155f44f)
 
-## Customize configuration
+# Deploy abaixo!
+https://metric-hub-frontend.vercel.app
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+# Instruções de instalação e execução!
 
 ## Project Setup
 
