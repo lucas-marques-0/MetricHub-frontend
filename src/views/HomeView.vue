@@ -24,12 +24,12 @@ const uploadFile = async () => {
       headers: { 'Content-Type': 'multipart/form-data' }
     });
     if(response) [chartDataMRR.value, chartDataCR.value] = [response.data.result.mrr, response.data.result.cr];
-    loading.value = false
   } catch (error) {
     Swal.fire({ icon: 'error', title: 'Erro', text: 'Os dados do seu arquivo não são compatíveis.' });
     console.log(error)
   }
-
+  
+  loading.value = false;
   fileInput.value.value = '';
 }
 
