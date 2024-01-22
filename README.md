@@ -1,4 +1,4 @@
-# MetricHub
+# MetricHub [Front-end]
 
 ![#41167F](https://github.com/lucas-marques-0/MetricHub-frontend/assets/111307314/3004a1d5-9f94-448c-b065-415393927079)
 
