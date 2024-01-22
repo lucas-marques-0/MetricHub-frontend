@@ -8,10 +8,12 @@ const fileInput = ref(null);
 const fileSelected = ref(false)
 const chartDataMRR = ref(null);
 const chartDataCR = ref(null);
+const loading = ref(false);
 
 const uploadFile = async () => {
   [chartDataMRR.value, chartDataCR.value] = [null, null];
   fileSelected.value = false;
+  loading.value = true;
 
   const file = await fileInput.value.files[0];
   const formData = new FormData();
@@ -22,6 +24,7 @@ const uploadFile = async () => {
       headers: { 'Content-Type': 'multipart/form-data' }
     });
     if(response) [chartDataMRR.value, chartDataCR.value] = [response.data.result.mrr, response.data.result.cr];
+    loading.value = false
   } catch (error) {
     Swal.fire({ icon: 'error', title: 'Erro', text: 'Os dados do seu arquivo não são compatíveis.' });
     console.log(error)
@@ -43,6 +46,7 @@ const handleFileChange = (event) => {
       <input type="file" accept=".xlsx, .csv" ref="fileInput" @change="handleFileChange">
       <button type="submit" :disabled="!fileSelected">Gerar Dashboard</button>
     </form>
+    <span v-if="loading">Loading...</span>
     <Dashboard v-if="chartDataMRR && chartDataCR" :chartDataMRR="chartDataMRR" :chartDataCR="chartDataCR" /> 
   </main>
 </template>
