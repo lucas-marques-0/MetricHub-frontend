@@ -11,6 +11,8 @@
 # Deploy abaixo!
 https://metric-hub-frontend.vercel.app
 
+<br><hr><br>
+
 # Instruções de instalação e execução!
 
 ## Project Setup
