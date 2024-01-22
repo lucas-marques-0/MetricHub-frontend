@@ -18,7 +18,7 @@ const uploadFile = async () => {
   formData.append('file', file);
 
   try {
-    const response = await axios.post('http://localhost:3000/upload', formData, {
+    const response = await axios.post('metric-hub-backend.vercel.app/upload', formData, {
       headers: { 'Content-Type': 'multipart/form-data' }
     });
     if(response) [chartDataMRR.value, chartDataCR.value] = [response.data.result.mrr, response.data.result.cr];
