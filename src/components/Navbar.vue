@@ -1,7 +1,7 @@
 <template>
     <nav>
         <a href="https://copybase.com.br" target="_blank"><img src="../assets/copybase-logo.svg" alt="Logo da empresa Copybase"></a>
-        <a id="about-me" target="_blank" href="https://lucas-marques-portfolio.vercel.app">Sobre o criador</a>
+        <a id="about-me" target="_blank" href="https://programadorinteligente.com.br">Sobre o criador</a>
     </nav>
 </template>
 
